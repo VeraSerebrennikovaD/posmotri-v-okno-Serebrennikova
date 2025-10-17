@@ -49,3 +49,44 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+.page {
+  display: flex;
+  min-block-size: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  align-items: end;
+  column-gap: 24px;
+}
+
+.content__details {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search-form {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.search-form__fieldset {
+  flex: 1 1 0;
+}
+
+.content__list-container {
+  block-size: 320px;
+  overflow: auto;
+}
+
+.result {
+  inline-size: 100%;
+}
