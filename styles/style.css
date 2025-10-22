@@ -305,9 +305,10 @@ ol {
   background-color: #D9D9D9;
 }
 
-.button,
 .content__card-link,
 .search-form__label,
 .search-form__pseudo-checkbox {
   cursor: pointer;
 }
+
+:where(.button, .content__card-link, .search-form__label):focus { outline: none; }
