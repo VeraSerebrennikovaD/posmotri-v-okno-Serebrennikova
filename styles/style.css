@@ -304,3 +304,10 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+.button,
+.content__card-link,
+.search-form__label,
+.search-form__pseudo-checkbox {
+  cursor: pointer;
+}
