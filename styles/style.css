@@ -334,3 +334,8 @@ ol {
     transition-duration:.01ms!important; scroll-behavior:auto!important; }
 }
 :where(.button,.content__card-link,.search-form__label):focus{ outline:none; }
+
+.button:hover{ text-decoration:underline; }
+.button:active{ background:var(--c-gray); }
+.button:focus-visible{ outline:1px solid var(--c-white); outline-offset:2px; }
+.button{ text-decoration-thickness: from-font; text-underline-offset:2px; }
