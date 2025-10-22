@@ -312,3 +312,25 @@ ol {
 }
 
 :where(.button, .content__card-link, .search-form__label):focus { outline: none; }
+
+:root{
+  --c-bg:#1b1919; --c-white:#fff; --c-gray:#545050; --br-white:1px solid var(--c-white);
+  --gap-s:12px; --gap-m:16px; --gap-l:20px; --ease-fast:.15s;
+}
+.page{ background-color:var(--c-bg); color:var(--c-white); }
+.content__accent{ color:var(--c-gray); }
+.content__card-link_current{ background:var(--c-gray); }
+.search-form__pseudo-checkbox{ border:var(--br-white); }
+.button{ border:var(--br-white); color:var(--c-white); }
+
+.button,.content__card-link,.search-form__label{
+  transition:
+          background-color var(--ease-fast) linear,
+          outline-color var(--ease-fast) linear,
+          text-decoration-color var(--ease-fast) linear;
+}
+@media (prefers-reduced-motion:reduce){
+  *{ animation-duration:.01ms!important; animation-iteration-count:1!important;
+    transition-duration:.01ms!important; scroll-behavior:auto!important; }
+}
+:where(.button,.content__card-link,.search-form__label):focus{ outline:none; }
