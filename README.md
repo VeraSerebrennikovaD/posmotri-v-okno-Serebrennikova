@@ -1,1 +1,1 @@
-https://github.com/VeraSerebrennikovaD/posmotri-v-okno-Serebrennikova
+https://github.com/VeraSerebrennikovaD/posmotri-v-okno-ad
